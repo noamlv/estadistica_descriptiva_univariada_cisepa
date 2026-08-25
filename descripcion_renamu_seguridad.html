@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Noam Lopez Villanes">
+
+<title>Descripcion estadistica: RENAMU Seguridad 2025</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="descripcion_renamu_seguridad_files/libs/clipboard/clipboard.min.js"></script>
+<script src="descripcion_renamu_seguridad_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="descripcion_renamu_seguridad_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="descripcion_renamu_seguridad_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="descripcion_renamu_seguridad_files/libs/quarto-html/popper.min.js"></script>
+<script src="descripcion_renamu_seguridad_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="descripcion_renamu_seguridad_files/libs/quarto-html/anchor.min.js"></script>
+<link href="descripcion_renamu_seguridad_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="descripcion_renamu_seguridad_files/libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="descripcion_renamu_seguridad_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="descripcion_renamu_seguridad_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="descripcion_renamu_seguridad_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#paquetes" id="toc-paquetes" class="nav-link active" data-scroll-target="#paquetes"><span class="header-section-number">1</span> 1. Paquetes</a></li>
+  <li><a href="#importar-datos" id="toc-importar-datos" class="nav-link" data-scroll-target="#importar-datos"><span class="header-section-number">2</span> 2. Importar datos</a></li>
+  <li><a href="#clasificar-variables" id="toc-clasificar-variables" class="nav-link" data-scroll-target="#clasificar-variables"><span class="header-section-number">3</span> 3. Clasificar variables</a></li>
+  <li><a href="#variables-cualitativas-nominales" id="toc-variables-cualitativas-nominales" class="nav-link" data-scroll-target="#variables-cualitativas-nominales"><span class="header-section-number">4</span> 4. Variables cualitativas nominales</a>
+  <ul class="collapse">
+  <li><a href="#funcion-para-moda-y-variacion-modal" id="toc-funcion-para-moda-y-variacion-modal" class="nav-link" data-scroll-target="#funcion-para-moda-y-variacion-modal"><span class="header-section-number">4.1</span> 4.1 Funcion para moda y variacion modal</a></li>
+  <li><a href="#resultados" id="toc-resultados" class="nav-link" data-scroll-target="#resultados"><span class="header-section-number">4.2</span> 4.2 Resultados</a></li>
+  </ul></li>
+  <li><a href="#variables-cuantitativas" id="toc-variables-cuantitativas" class="nav-link" data-scroll-target="#variables-cuantitativas"><span class="header-section-number">5</span> 5. Variables cuantitativas</a>
+  <ul class="collapse">
+  <li><a href="#funcion-completa-de-medidas" id="toc-funcion-completa-de-medidas" class="nav-link" data-scroll-target="#funcion-completa-de-medidas"><span class="header-section-number">5.1</span> 5.1 Funcion completa de medidas</a></li>
+  <li><a href="#resultados-por-variable" id="toc-resultados-por-variable" class="nav-link" data-scroll-target="#resultados-por-variable"><span class="header-section-number">5.2</span> 5.2 Resultados por variable</a></li>
+  </ul></li>
+  <li><a href="#tabla-resumen-consolidada" id="toc-tabla-resumen-consolidada" class="nav-link" data-scroll-target="#tabla-resumen-consolidada"><span class="header-section-number">6</span> 6. Tabla resumen consolidada</a></li>
+  <li><a href="#variables-binarias-sino" id="toc-variables-binarias-sino" class="nav-link" data-scroll-target="#variables-binarias-sino"><span class="header-section-number">7</span> 7. Variables binarias (Si/No)</a></li>
+  <li><a href="#mapa-de-concentracion-gini" id="toc-mapa-de-concentracion-gini" class="nav-link" data-scroll-target="#mapa-de-concentracion-gini"><span class="header-section-number">8</span> 8. Mapa de concentracion: Gini</a></li>
+  <li><a href="#valores-faltantes" id="toc-valores-faltantes" class="nav-link" data-scroll-target="#valores-faltantes"><span class="header-section-number">9</span> 9. Valores faltantes</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Descripcion estadistica: RENAMU Seguridad 2025</h1>
+<p class="subtitle lead">Estadistica descriptiva univariada con Python</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor/a</div>
+    <div class="quarto-title-meta-contents">
+             <p>Noam Lopez Villanes </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">21 de agosto de 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="paquetes" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="paquetes"><span class="header-section-number">1</span> 1. Paquetes</h2>
+<div id="paquetes" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> collections <span class="im">import</span> Counter</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">"ignore"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="importar-datos" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="importar-datos"><span class="header-section-number">2</span> 2. Importar datos</h2>
+<div id="importar" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"datos/renamu_seguridad_2025.csv"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>diccionario <span class="op">=</span> pd.read_csv(<span class="st">"datos/diccionario_renamu_seguridad_2025.csv"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Dimensiones: </span><span class="sc">{</span>df<span class="sc">.</span>shape[<span class="dv">0</span>]<span class="sc">}</span><span class="ss"> filas x </span><span class="sc">{</span>df<span class="sc">.</span>shape[<span class="dv">1</span>]<span class="sc">}</span><span class="ss"> columnas"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Dimensiones: 1891 filas x 32 columnas</code></pre>
+</div>
+</div>
+</section>
+<section id="clasificar-variables" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="clasificar-variables"><span class="header-section-number">3</span> 3. Clasificar variables</h2>
+<div id="clasificar" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>nominales <span class="op">=</span> [</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"departamento"</span>, <span class="st">"provincia"</span>, <span class="st">"distrito"</span>, <span class="st">"tipo_municipalidad"</span>,</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"serenazgo_2024"</span>, <span class="st">"serenazgo_2025"</span>, <span class="st">"tiene_auto_camioneta"</span>,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"tiene_radio"</span>, <span class="st">"tiene_camaras"</span>, <span class="st">"tiene_central_videovigilancia"</span>,</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"tiene_chaleco_antibalas"</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>cuantitativas <span class="op">=</span> [</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"p69_2_t"</span>, <span class="st">"p69_2_m"</span>, <span class="st">"p69_2_h"</span>,</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"p70a_1_1"</span>, <span class="st">"p70a_1_2"</span>, <span class="st">"p70a_1_3"</span>,</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"p70a_6_1"</span>, <span class="st">"p70a_6_2"</span>, <span class="st">"p70a_6_3"</span>,</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">"p70a_7_1"</span>, <span class="st">"p70a_7_2"</span>, <span class="st">"p70a_7_3"</span>, <span class="st">"p70a_7_4"</span>,</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">"p70a_10_1"</span>, <span class="st">"p70a_10_2"</span>, <span class="st">"p70a_10_3"</span>,</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">"p70a_13_1"</span>, <span class="st">"total_intervenciones"</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>identificadores <span class="op">=</span> [<span class="st">"ano"</span>, <span class="st">"ubigeo"</span>]</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Nominales: </span><span class="sc">{</span><span class="bu">len</span>(nominales)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Cuantitativas: </span><span class="sc">{</span><span class="bu">len</span>(cuantitativas)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Identificadores: </span><span class="sc">{</span><span class="bu">len</span>(identificadores)<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Nominales: 11
+Cuantitativas: 18
+Identificadores: 2</code></pre>
+</div>
+</div>
+</section>
+<section id="variables-cualitativas-nominales" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="variables-cualitativas-nominales"><span class="header-section-number">4</span> 4. Variables cualitativas nominales</h2>
+<section id="funcion-para-moda-y-variacion-modal" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="funcion-para-moda-y-variacion-modal"><span class="header-section-number">4.1</span> 4.1 Funcion para moda y variacion modal</h3>
+<div id="funcion-nominal" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> estadisticas_nominales(dataframe, columna):</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    datos <span class="op">=</span> dataframe[columna].dropna()</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    total <span class="op">=</span> <span class="bu">len</span>(datos)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    freq <span class="op">=</span> Counter(datos)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    moda <span class="op">=</span> freq.most_common(<span class="dv">1</span>)[<span class="dv">0</span>]</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    frecuencia_moda <span class="op">=</span> moda[<span class="dv">1</span>]</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    variacion_modal <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> (frecuencia_moda <span class="op">/</span> total) <span class="cf">if</span> total <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    tabla <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>        <span class="st">"categoria"</span>: <span class="bu">list</span>(freq.keys()),</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        <span class="st">"frecuencia"</span>: <span class="bu">list</span>(freq.values()),</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        <span class="st">"frec_relativa"</span>: [f <span class="op">/</span> total <span class="cf">for</span> f <span class="kw">in</span> freq.values()],</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        <span class="st">"frec_acumulada"</span>: np.cumsum(<span class="bu">list</span>(freq.values())) <span class="op">/</span> total</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    }).sort_values(<span class="st">"frecuencia"</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>        <span class="st">"variable"</span>: columna,</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>        <span class="st">"moda"</span>: moda[<span class="dv">0</span>],</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>        <span class="st">"frecuencia_moda"</span>: moda[<span class="dv">1</span>],</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>        <span class="st">"variacion_modal"</span>: <span class="bu">round</span>(variacion_modal, <span class="dv">4</span>),</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>        <span class="st">"n_categorias"</span>: <span class="bu">len</span>(freq),</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>        <span class="st">"tabla"</span>: tabla</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>    }</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="resultados" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="resultados"><span class="header-section-number">4.2</span> 4.2 Resultados</h3>
+<div id="nominales-resultados" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> nominales:</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    res <span class="op">=</span> estadisticas_nominales(df, col)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="sc">{</span><span class="st">'='</span><span class="op">*</span><span class="dv">50</span><span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"VARIABLE: </span><span class="sc">{</span>res[<span class="st">'variable'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Moda: </span><span class="sc">{</span>res[<span class="st">'moda'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Frecuencia de la moda: </span><span class="sc">{</span>res[<span class="st">'frecuencia_moda'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Variacion modal: </span><span class="sc">{</span>res[<span class="st">'variacion_modal'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Categorias unicas: </span><span class="sc">{</span>res[<span class="st">'n_categorias'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Top 5:"</span>)</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(res[<span class="st">"tabla"</span>].head().to_string(index<span class="op">=</span><span class="va">False</span>))</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+==================================================
+VARIABLE: departamento
+Moda: LIMA
+Frecuencia de la moda: 171
+Variacion modal: 0.9096
+Categorias unicas: 25
+
+Top 5:
+categoria  frecuencia  frec_relativa  frec_acumulada
+     LIMA         171       0.090428        0.774194
+   ANCASH         166       0.087784        0.132205
+CAJAMARCA         127       0.067160        0.367530
+    JUNIN         124       0.065574        0.619249
+ AYACUCHO         124       0.065574        0.300370
+
+==================================================
+VARIABLE: provincia
+Moda: LIMA
+Frecuencia de la moda: 43
+Variacion modal: 0.9773
+Categorias unicas: 196
+
+Top 5:
+ categoria  frecuencia  frec_relativa  frec_acumulada
+      LIMA          43       0.022739        0.706504
+     JAUJA          34       0.017980        0.597567
+    YAUYOS          33       0.017451        0.774194
+HUAROCHIRI          32       0.016922        0.747224
+  AREQUIPA          29       0.015336        0.192491
+
+==================================================
+VARIABLE: distrito
+Moda: SANTA ROSA
+Frecuencia de la moda: 10
+Variacion modal: 0.9947
+Categorias unicas: 1735
+
+Top 5:
+   categoria  frecuencia  frec_relativa  frec_acumulada
+  SANTA ROSA          10       0.005288        0.051824
+ SAN ANTONIO           6       0.003173        0.210999
+  SANTA CRUZ           5       0.002644        0.117398
+PUEBLO NUEVO           5       0.002644        0.556319
+       PALCA           4       0.002115        0.483342
+
+==================================================
+VARIABLE: tipo_municipalidad
+Moda: Distrital
+Frecuencia de la moda: 1695
+Variacion modal: 0.1036
+Categorias unicas: 2
+
+Top 5:
+ categoria  frecuencia  frec_relativa  frec_acumulada
+ Distrital        1695       0.896351        1.000000
+Provincial         196       0.103649        0.103649
+
+==================================================
+VARIABLE: serenazgo_2024
+Moda: Sí
+Frecuencia de la moda: 1280
+Variacion modal: 0.3231
+Categorias unicas: 2
+
+Top 5:
+categoria  frecuencia  frec_relativa  frec_acumulada
+       Sí        1280       0.676891        0.676891
+       No         611       0.323109        1.000000
+
+==================================================
+VARIABLE: serenazgo_2025
+Moda: Sí
+Frecuencia de la moda: 1265
+Variacion modal: 0.331
+Categorias unicas: 2
+
+Top 5:
+categoria  frecuencia  frec_relativa  frec_acumulada
+       Sí        1265       0.668958        0.668958
+       No         626       0.331042        1.000000
+
+==================================================
+VARIABLE: tiene_auto_camioneta
+Moda: Sí
+Frecuencia de la moda: 978
+Variacion modal: 0.4828
+Categorias unicas: 2
+
+Top 5:
+categoria  frecuencia  frec_relativa  frec_acumulada
+       Sí         978       0.517187        0.517187
+       No         913       0.482813        1.000000
+
+==================================================
+VARIABLE: tiene_radio
+Moda: No
+Frecuencia de la moda: 1360
+Variacion modal: 0.2808
+Categorias unicas: 2
+
+Top 5:
+categoria  frecuencia  frec_relativa  frec_acumulada
+       No        1360       0.719196        0.719196
+       Sí         531       0.280804        1.000000
+
+==================================================
+VARIABLE: tiene_camaras
+Moda: No
+Frecuencia de la moda: 1257
+Variacion modal: 0.3353
+Categorias unicas: 2
+
+Top 5:
+categoria  frecuencia  frec_relativa  frec_acumulada
+       No        1257       0.664728        1.000000
+       Sí         634       0.335272        0.335272
+
+==================================================
+VARIABLE: tiene_central_videovigilancia
+Moda: No
+Frecuencia de la moda: 1395
+Variacion modal: 0.2623
+Categorias unicas: 2
+
+Top 5:
+categoria  frecuencia  frec_relativa  frec_acumulada
+       No        1395       0.737705        1.000000
+       Sí         496       0.262295        0.262295
+
+==================================================
+VARIABLE: tiene_chaleco_antibalas
+Moda: No
+Frecuencia de la moda: 1562
+Variacion modal: 0.174
+Categorias unicas: 2
+
+Top 5:
+categoria  frecuencia  frec_relativa  frec_acumulada
+       No        1562       0.826018        0.826018
+       Sí         329       0.173982        1.000000</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="variables-cuantitativas" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="variables-cuantitativas"><span class="header-section-number">5</span> 5. Variables cuantitativas</h2>
+<section id="funcion-completa-de-medidas" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="funcion-completa-de-medidas"><span class="header-section-number">5.1</span> 5.1 Funcion completa de medidas</h3>
+<div id="funcion-cuantitativas" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> estadisticas_cuantitativas(dataframe, columna):</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    datos <span class="op">=</span> dataframe[columna].dropna()</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(datos) <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Centralizacion</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    media <span class="op">=</span> datos.mean()</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    mediana <span class="op">=</span> datos.median()</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    moda <span class="op">=</span> stats.mode(datos, keepdims<span class="op">=</span><span class="va">True</span>).mode[<span class="dv">0</span>]</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Posicion</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    q1 <span class="op">=</span> np.percentile(datos, <span class="dv">25</span>)</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    q3 <span class="op">=</span> np.percentile(datos, <span class="dv">75</span>)</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>    percentiles <span class="op">=</span> {</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>        <span class="st">"P10"</span>: np.percentile(datos, <span class="dv">10</span>),</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>        <span class="st">"P25"</span>: q1, <span class="st">"P50"</span>: mediana,</span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>        <span class="st">"P75"</span>: q3, <span class="st">"P90"</span>: np.percentile(datos, <span class="dv">90</span>)</span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Dispersion</span></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>    rango <span class="op">=</span> datos.<span class="bu">max</span>() <span class="op">-</span> datos.<span class="bu">min</span>()</span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>    varianza <span class="op">=</span> datos.var()</span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>    desviacion <span class="op">=</span> datos.std()</span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>    cv <span class="op">=</span> (desviacion <span class="op">/</span> media <span class="op">*</span> <span class="dv">100</span>) <span class="cf">if</span> media <span class="op">!=</span> <span class="dv">0</span> <span class="cf">else</span> np.nan</span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>    iqr <span class="op">=</span> q3 <span class="op">-</span> q1</span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Simetria</span></span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>    asimetria_pearson <span class="op">=</span> stats.skew(datos)</span>
+<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>    asimetria_yules <span class="op">=</span> (q3 <span class="op">+</span> q1 <span class="op">-</span> <span class="dv">2</span> <span class="op">*</span> mediana) <span class="op">/</span> (q3 <span class="op">-</span> q1) <span class="cf">if</span> (q3 <span class="op">-</span> q1) <span class="op">!=</span> <span class="dv">0</span> <span class="cf">else</span> np.nan</span>
+<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Apuntamiento</span></span>
+<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a>    curtosis_fisher <span class="op">=</span> stats.kurtosis(datos)</span>
+<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {</span>
+<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a>        <span class="st">"variable"</span>: columna,</span>
+<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a>        <span class="st">"n"</span>: <span class="bu">len</span>(datos),</span>
+<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a>        <span class="st">"nulos"</span>: dataframe[columna].isna().<span class="bu">sum</span>(),</span>
+<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>        <span class="st">"media"</span>: <span class="bu">round</span>(media, <span class="dv">4</span>),</span>
+<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>        <span class="st">"mediana"</span>: <span class="bu">round</span>(mediana, <span class="dv">4</span>),</span>
+<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>        <span class="st">"moda"</span>: moda,</span>
+<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a>        <span class="st">"percentiles"</span>: percentiles,</span>
+<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a>        <span class="st">"rango"</span>: <span class="bu">round</span>(rango, <span class="dv">4</span>),</span>
+<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a>        <span class="st">"varianza"</span>: <span class="bu">round</span>(varianza, <span class="dv">4</span>),</span>
+<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>        <span class="st">"de"</span>: <span class="bu">round</span>(desviacion, <span class="dv">4</span>),</span>
+<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>        <span class="st">"cv"</span>: <span class="bu">round</span>(cv, <span class="dv">4</span>),</span>
+<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a>        <span class="st">"iqr"</span>: <span class="bu">round</span>(iqr, <span class="dv">4</span>),</span>
+<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a>        <span class="st">"asimetria_pearson"</span>: <span class="bu">round</span>(asimetria_pearson, <span class="dv">4</span>),</span>
+<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a>        <span class="st">"asimetria_yules"</span>: <span class="bu">round</span>(asimetria_yules, <span class="dv">4</span>),</span>
+<span id="cb9-49"><a href="#cb9-49" aria-hidden="true" tabindex="-1"></a>        <span class="st">"curtosis_fisher"</span>: <span class="bu">round</span>(curtosis_fisher, <span class="dv">4</span>)</span>
+<span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a>    }</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="resultados-por-variable" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="resultados-por-variable"><span class="header-section-number">5.2</span> 5.2 Resultados por variable</h3>
+<div id="cuantitativas-resultados" class="cell" data-execution_count="7">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> cuantitativas:</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    res <span class="op">=</span> estadisticas_cuantitativas(df, col)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> res <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="sc">{</span><span class="st">'='</span><span class="op">*</span><span class="dv">55</span><span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"VARIABLE: </span><span class="sc">{</span>res[<span class="st">'variable'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"  N validos: </span><span class="sc">{</span>res[<span class="st">'n'</span>]<span class="sc">}</span><span class="ss"> | Nulos: </span><span class="sc">{</span>res[<span class="st">'nulos'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">  Centralizacion:"</span>)</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"    Media: </span><span class="sc">{</span>res[<span class="st">'media'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"    Mediana: </span><span class="sc">{</span>res[<span class="st">'mediana'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"    Moda: </span><span class="sc">{</span>res[<span class="st">'moda'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">  Posicion (percentiles):"</span>)</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> k, v <span class="kw">in</span> res[<span class="st">"percentiles"</span>].items():</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"    </span><span class="sc">{</span>k<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>v<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">  Dispersion:"</span>)</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"    Rango: </span><span class="sc">{</span>res[<span class="st">'rango'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"    Varianza: </span><span class="sc">{</span>res[<span class="st">'varianza'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"    DE: </span><span class="sc">{</span>res[<span class="st">'de'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"    CV%: </span><span class="sc">{</span>res[<span class="st">'cv'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"    IQR: </span><span class="sc">{</span>res[<span class="st">'iqr'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">  Simetria:"</span>)</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"    Pearson/Fisher: </span><span class="sc">{</span>res[<span class="st">'asimetria_pearson'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"    Yules-Bowley: </span><span class="sc">{</span>res[<span class="st">'asimetria_yules'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">  Apuntamiento:"</span>)</span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"    Curtosis de Fisher: </span><span class="sc">{</span>res[<span class="st">'curtosis_fisher'</span>]<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+=======================================================
+VARIABLE: p69_2_t
+  N validos: 1265 | Nulos: 626
+
+  Centralizacion:
+    Media: 33.4648
+    Mediana: 7.0
+    Moda: 2.0
+
+  Posicion (percentiles):
+    P10: 1.0
+    P25: 3.0
+    P50: 7.0
+    P75: 20.0
+    P90: 56.0
+
+  Dispersion:
+    Rango: 1533.0
+    Varianza: 11845.4246
+    DE: 108.8367
+    CV%: 325.2272
+    IQR: 17.0
+
+  Simetria:
+    Pearson/Fisher: 7.6097
+    Yules-Bowley: 0.5294
+
+  Apuntamiento:
+    Curtosis de Fisher: 73.5112
+
+=======================================================
+VARIABLE: p69_2_m
+  N validos: 1265 | Nulos: 626
+
+  Centralizacion:
+    Media: 7.2142
+    Mediana: 1.0
+    Moda: 0.0
+
+  Posicion (percentiles):
+    P10: 0.0
+    P25: 0.0
+    P50: 1.0
+    P75: 3.0
+    P90: 11.0
+
+  Dispersion:
+    Rango: 321.0
+    Varianza: 700.14
+    DE: 26.4602
+    CV%: 366.7773
+    IQR: 3.0
+
+  Simetria:
+    Pearson/Fisher: 6.8885
+    Yules-Bowley: 0.3333
+
+  Apuntamiento:
+    Curtosis de Fisher: 56.041
+
+=======================================================
+VARIABLE: p69_2_h
+  N validos: 1265 | Nulos: 626
+
+  Centralizacion:
+    Media: 26.2506
+    Mediana: 6.0
+    Moda: 2.0
+
+  Posicion (percentiles):
+    P10: 1.0
+    P25: 2.0
+    P50: 6.0
+    P75: 16.0
+    P90: 46.600000000000136
+
+  Dispersion:
+    Rango: 1213.0
+    Varianza: 7002.1816
+    DE: 83.679
+    CV%: 318.7701
+    IQR: 14.0
+
+  Simetria:
+    Pearson/Fisher: 7.9177
+    Yules-Bowley: 0.4286
+
+  Apuntamiento:
+    Curtosis de Fisher: 80.7911
+
+=======================================================
+VARIABLE: p70a_1_1
+  N validos: 978 | Nulos: 913
+
+  Centralizacion:
+    Media: 4.045
+    Mediana: 1.0
+    Moda: 1.0
+
+  Posicion (percentiles):
+    P10: 1.0
+    P25: 1.0
+    P50: 1.0
+    P75: 3.0
+    P90: 8.0
+
+  Dispersion:
+    Rango: 99.0
+    Varianza: 82.2989
+    DE: 9.0719
+    CV%: 224.2743
+    IQR: 2.0
+
+  Simetria:
+    Pearson/Fisher: 6.1486
+    Yules-Bowley: 1.0
+
+  Apuntamiento:
+    Curtosis de Fisher: 45.4692
+
+=======================================================
+VARIABLE: p70a_1_2
+  N validos: 978 | Nulos: 913
+
+  Centralizacion:
+    Media: 3.3753
+    Mediana: 1.0
+    Moda: 1.0
+
+  Posicion (percentiles):
+    P10: 1.0
+    P25: 1.0
+    P50: 1.0
+    P75: 2.0
+    P90: 6.0
+
+  Dispersion:
+    Rango: 100.0
+    Varianza: 60.7485
+    DE: 7.7941
+    CV%: 230.9198
+    IQR: 1.0
+
+  Simetria:
+    Pearson/Fisher: 6.4494
+    Yules-Bowley: 1.0
+
+  Apuntamiento:
+    Curtosis de Fisher: 52.1327
+
+=======================================================
+VARIABLE: p70a_1_3
+  N validos: 978 | Nulos: 913
+
+  Centralizacion:
+    Media: 0.6697
+    Mediana: 0.0
+    Moda: 0.0
+
+  Posicion (percentiles):
+    P10: 0.0
+    P25: 0.0
+    P50: 0.0
+    P75: 1.0
+    P90: 2.0
+
+  Dispersion:
+    Rango: 32.0
+    Varianza: 4.2828
+    DE: 2.0695
+    CV%: 309.0032
+    IQR: 1.0
+
+  Simetria:
+    Pearson/Fisher: 7.471
+    Yules-Bowley: 1.0
+
+  Apuntamiento:
+    Curtosis de Fisher: 77.8469
+
+=======================================================
+VARIABLE: p70a_6_1
+  N validos: 531 | Nulos: 1360
+
+  Centralizacion:
+    Media: 29.7269
+    Mediana: 10.0
+    Moda: 1.0
+
+  Posicion (percentiles):
+    P10: 2.0
+    P25: 4.0
+    P50: 10.0
+    P75: 21.0
+    P90: 61.0
+
+  Dispersion:
+    Rango: 1230.0
+    Varianza: 7054.7876
+    DE: 83.9928
+    CV%: 282.5478
+    IQR: 17.0
+
+  Simetria:
+    Pearson/Fisher: 8.3925
+    Yules-Bowley: 0.2941
+
+  Apuntamiento:
+    Curtosis de Fisher: 93.7943
+
+=======================================================
+VARIABLE: p70a_6_2
+  N validos: 531 | Nulos: 1360
+
+  Centralizacion:
+    Media: 26.0377
+    Mediana: 7.0
+    Moda: 4.0
+
+  Posicion (percentiles):
+    P10: 1.0
+    P25: 3.0
+    P50: 7.0
+    P75: 18.5
+    P90: 50.0
+
+  Dispersion:
+    Rango: 1223.0
+    Varianza: 6659.742
+    DE: 81.6072
+    CV%: 313.42
+    IQR: 15.5
+
+  Simetria:
+    Pearson/Fisher: 8.9269
+    Yules-Bowley: 0.4839
+
+  Apuntamiento:
+    Curtosis de Fisher: 103.6631
+
+=======================================================
+VARIABLE: p70a_6_3
+  N validos: 531 | Nulos: 1360
+
+  Centralizacion:
+    Media: 3.6893
+    Mediana: 0.0
+    Moda: 0.0
+
+  Posicion (percentiles):
+    P10: 0.0
+    P25: 0.0
+    P50: 0.0
+    P75: 3.0
+    P90: 9.0
+
+  Dispersion:
+    Rango: 130.0
+    Varianza: 129.4184
+    DE: 11.3762
+    CV%: 308.36
+    IQR: 3.0
+
+  Simetria:
+    Pearson/Fisher: 6.8731
+    Yules-Bowley: 1.0
+
+  Apuntamiento:
+    Curtosis de Fisher: 60.7209
+
+=======================================================
+VARIABLE: p70a_7_1
+  N validos: 634 | Nulos: 1257
+
+  Centralizacion:
+    Media: 37.0047
+    Mediana: 12.0
+    Moda: 4.0
+
+  Posicion (percentiles):
+    P10: 3.0
+    P25: 6.0
+    P50: 12.0
+    P75: 28.0
+    P90: 77.10000000000014
+
+  Dispersion:
+    Rango: 711.0
+    Varianza: 7012.2922
+    DE: 83.7394
+    CV%: 226.2938
+    IQR: 22.0
+
+  Simetria:
+    Pearson/Fisher: 5.1692
+    Yules-Bowley: 0.4545
+
+  Apuntamiento:
+    Curtosis de Fisher: 31.3144
+
+=======================================================
+VARIABLE: p70a_7_2
+  N validos: 634 | Nulos: 1257
+
+  Centralizacion:
+    Media: 31.1309
+    Mediana: 9.0
+    Moda: 4.0
+
+  Posicion (percentiles):
+    P10: 2.0
+    P25: 4.0
+    P50: 9.0
+    P75: 24.0
+    P90: 57.0
+
+  Dispersion:
+    Rango: 712.0
+    Varianza: 5813.1471
+    DE: 76.244
+    CV%: 244.9141
+    IQR: 20.0
+
+  Simetria:
+    Pearson/Fisher: 5.5063
+    Yules-Bowley: 0.5
+
+  Apuntamiento:
+    Curtosis de Fisher: 35.3813
+
+=======================================================
+VARIABLE: p70a_7_3
+  N validos: 634 | Nulos: 1257
+
+  Centralizacion:
+    Media: 5.8738
+    Mediana: 0.0
+    Moda: 0.0
+
+  Posicion (percentiles):
+    P10: 0.0
+    P25: 0.0
+    P50: 0.0
+    P75: 5.0
+    P90: 15.0
+
+  Dispersion:
+    Rango: 200.0
+    Varianza: 253.7155
+    DE: 15.9284
+    CV%: 271.1771
+    IQR: 5.0
+
+  Simetria:
+    Pearson/Fisher: 6.4417
+    Yules-Bowley: 1.0
+
+  Apuntamiento:
+    Curtosis de Fisher: 58.6287
+
+=======================================================
+VARIABLE: p70a_7_4
+  N validos: 634 | Nulos: 1257
+
+  Centralizacion:
+    Media: 6.1845
+    Mediana: 0.0
+    Moda: 0.0
+
+  Posicion (percentiles):
+    P10: 0.0
+    P25: 0.0
+    P50: 0.0
+    P75: 0.0
+    P90: 7.7000000000000455
+
+  Dispersion:
+    Rango: 400.0
+    Varianza: 1010.3782
+    DE: 31.7864
+    CV%: 513.966
+    IQR: 0.0
+
+  Simetria:
+    Pearson/Fisher: 8.7212
+    Yules-Bowley: nan
+
+  Apuntamiento:
+    Curtosis de Fisher: 87.1714
+
+=======================================================
+VARIABLE: p70a_10_1
+  N validos: 496 | Nulos: 1395
+
+  Centralizacion:
+    Media: 1.369
+    Mediana: 1.0
+    Moda: 1.0
+
+  Posicion (percentiles):
+    P10: 1.0
+    P25: 1.0
+    P50: 1.0
+    P75: 1.0
+    P90: 2.0
+
+  Dispersion:
+    Rango: 39.0
+    Varianza: 6.1202
+    DE: 2.4739
+    CV%: 180.7147
+    IQR: 0.0
+
+  Simetria:
+    Pearson/Fisher: 13.5582
+    Yules-Bowley: nan
+
+  Apuntamiento:
+    Curtosis de Fisher: 196.5327
+
+=======================================================
+VARIABLE: p70a_10_2
+  N validos: 496 | Nulos: 1395
+
+  Centralizacion:
+    Media: 1.2137
+    Mediana: 1.0
+    Moda: 1.0
+
+  Posicion (percentiles):
+    P10: 1.0
+    P25: 1.0
+    P50: 1.0
+    P75: 1.0
+    P90: 1.0
+
+  Dispersion:
+    Rango: 35.0
+    Varianza: 4.6653
+    DE: 2.1599
+    CV%: 177.962
+    IQR: 0.0
+
+  Simetria:
+    Pearson/Fisher: 13.8784
+    Yules-Bowley: nan
+
+  Apuntamiento:
+    Curtosis de Fisher: 203.0445
+
+=======================================================
+VARIABLE: p70a_10_3
+  N validos: 496 | Nulos: 1395
+
+  Centralizacion:
+    Media: 0.1552
+    Mediana: 0.0
+    Moda: 0.0
+
+  Posicion (percentiles):
+    P10: 0.0
+    P25: 0.0
+    P50: 0.0
+    P75: 0.0
+    P90: 1.0
+
+  Dispersion:
+    Rango: 8.0
+    Varianza: 0.293
+    DE: 0.5413
+    CV%: 348.6918
+    IQR: 0.0
+
+  Simetria:
+    Pearson/Fisher: 8.2052
+    Yules-Bowley: nan
+
+  Apuntamiento:
+    Curtosis de Fisher: 100.5473
+
+=======================================================
+VARIABLE: p70a_13_1
+  N validos: 329 | Nulos: 1562
+
+  Centralizacion:
+    Media: 27.234
+    Mediana: 9.0
+    Moda: 4.0
+
+  Posicion (percentiles):
+    P10: 2.0
+    P25: 4.0
+    P50: 9.0
+    P75: 20.0
+    P90: 54.19999999999999
+
+  Dispersion:
+    Rango: 499.0
+    Varianza: 3779.4298
+    DE: 61.4771
+    CV%: 225.7361
+    IQR: 16.0
+
+  Simetria:
+    Pearson/Fisher: 4.8723
+    Yules-Bowley: 0.375
+
+  Apuntamiento:
+    Curtosis de Fisher: 27.7534
+
+=======================================================
+VARIABLE: total_intervenciones
+  N validos: 1891 | Nulos: 0
+
+  Centralizacion:
+    Media: 658.9307
+    Mediana: 8.0
+    Moda: 0
+
+  Posicion (percentiles):
+    P10: 0.0
+    P25: 0.0
+    P50: 8.0
+    P75: 55.0
+    P90: 410.0
+
+  Dispersion:
+    Rango: 84082
+    Varianza: 20648213.1661
+    DE: 4544.0305
+    CV%: 689.6067
+    IQR: 55.0
+
+  Simetria:
+    Pearson/Fisher: 12.5821
+    Yules-Bowley: 0.7091
+
+  Apuntamiento:
+    Curtosis de Fisher: 183.7675</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="tabla-resumen-consolidada" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="tabla-resumen-consolidada"><span class="header-section-number">6</span> 6. Tabla resumen consolidada</h2>
+<div id="cell-tabla-resumen" class="cell" data-execution_count="8">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>filas <span class="op">=</span> []</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> cuantitativas:</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    res <span class="op">=</span> estadisticas_cuantitativas(df, col)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> res <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    filas.append({</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Variable"</span>: col,</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>        <span class="st">"N"</span>: res[<span class="st">"n"</span>],</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Media"</span>: res[<span class="st">"media"</span>],</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Mediana"</span>: res[<span class="st">"mediana"</span>],</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Moda"</span>: res[<span class="st">"moda"</span>],</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>        <span class="st">"DE"</span>: res[<span class="st">"de"</span>],</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>        <span class="st">"CV%"</span>: res[<span class="st">"cv"</span>],</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Q1"</span>: res[<span class="st">"percentiles"</span>][<span class="st">"P25"</span>],</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Q3"</span>: res[<span class="st">"percentiles"</span>][<span class="st">"P75"</span>],</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>        <span class="st">"IQR"</span>: res[<span class="st">"iqr"</span>],</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Asimetria"</span>: res[<span class="st">"asimetria_pearson"</span>],</span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Curtosis"</span>: res[<span class="st">"curtosis_fisher"</span>]</span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>df_resumen <span class="op">=</span> pd.DataFrame(filas)</span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>df_resumen</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="tabla-resumen" class="cell-output cell-output-display" data-execution_count="8">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Variable</th>
+<th data-quarto-table-cell-role="th">N</th>
+<th data-quarto-table-cell-role="th">Media</th>
+<th data-quarto-table-cell-role="th">Mediana</th>
+<th data-quarto-table-cell-role="th">Moda</th>
+<th data-quarto-table-cell-role="th">DE</th>
+<th data-quarto-table-cell-role="th">CV%</th>
+<th data-quarto-table-cell-role="th">Q1</th>
+<th data-quarto-table-cell-role="th">Q3</th>
+<th data-quarto-table-cell-role="th">IQR</th>
+<th data-quarto-table-cell-role="th">Asimetria</th>
+<th data-quarto-table-cell-role="th">Curtosis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>p69_2_t</td>
+<td>1265</td>
+<td>33.4648</td>
+<td>7.0</td>
+<td>2.0</td>
+<td>108.8367</td>
+<td>325.2272</td>
+<td>3.0</td>
+<td>20.0</td>
+<td>17.0</td>
+<td>7.6097</td>
+<td>73.5112</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>p69_2_m</td>
+<td>1265</td>
+<td>7.2142</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>26.4602</td>
+<td>366.7773</td>
+<td>0.0</td>
+<td>3.0</td>
+<td>3.0</td>
+<td>6.8885</td>
+<td>56.0410</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>p69_2_h</td>
+<td>1265</td>
+<td>26.2506</td>
+<td>6.0</td>
+<td>2.0</td>
+<td>83.6790</td>
+<td>318.7701</td>
+<td>2.0</td>
+<td>16.0</td>
+<td>14.0</td>
+<td>7.9177</td>
+<td>80.7911</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>p70a_1_1</td>
+<td>978</td>
+<td>4.0450</td>
+<td>1.0</td>
+<td>1.0</td>
+<td>9.0719</td>
+<td>224.2743</td>
+<td>1.0</td>
+<td>3.0</td>
+<td>2.0</td>
+<td>6.1486</td>
+<td>45.4692</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>p70a_1_2</td>
+<td>978</td>
+<td>3.3753</td>
+<td>1.0</td>
+<td>1.0</td>
+<td>7.7941</td>
+<td>230.9198</td>
+<td>1.0</td>
+<td>2.0</td>
+<td>1.0</td>
+<td>6.4494</td>
+<td>52.1327</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">5</th>
+<td>p70a_1_3</td>
+<td>978</td>
+<td>0.6697</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>2.0695</td>
+<td>309.0032</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>1.0</td>
+<td>7.4710</td>
+<td>77.8469</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">6</th>
+<td>p70a_6_1</td>
+<td>531</td>
+<td>29.7269</td>
+<td>10.0</td>
+<td>1.0</td>
+<td>83.9928</td>
+<td>282.5478</td>
+<td>4.0</td>
+<td>21.0</td>
+<td>17.0</td>
+<td>8.3925</td>
+<td>93.7943</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">7</th>
+<td>p70a_6_2</td>
+<td>531</td>
+<td>26.0377</td>
+<td>7.0</td>
+<td>4.0</td>
+<td>81.6072</td>
+<td>313.4200</td>
+<td>3.0</td>
+<td>18.5</td>
+<td>15.5</td>
+<td>8.9269</td>
+<td>103.6631</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">8</th>
+<td>p70a_6_3</td>
+<td>531</td>
+<td>3.6893</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>11.3762</td>
+<td>308.3600</td>
+<td>0.0</td>
+<td>3.0</td>
+<td>3.0</td>
+<td>6.8731</td>
+<td>60.7209</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">9</th>
+<td>p70a_7_1</td>
+<td>634</td>
+<td>37.0047</td>
+<td>12.0</td>
+<td>4.0</td>
+<td>83.7394</td>
+<td>226.2938</td>
+<td>6.0</td>
+<td>28.0</td>
+<td>22.0</td>
+<td>5.1692</td>
+<td>31.3144</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">10</th>
+<td>p70a_7_2</td>
+<td>634</td>
+<td>31.1309</td>
+<td>9.0</td>
+<td>4.0</td>
+<td>76.2440</td>
+<td>244.9141</td>
+<td>4.0</td>
+<td>24.0</td>
+<td>20.0</td>
+<td>5.5063</td>
+<td>35.3813</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">11</th>
+<td>p70a_7_3</td>
+<td>634</td>
+<td>5.8738</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>15.9284</td>
+<td>271.1771</td>
+<td>0.0</td>
+<td>5.0</td>
+<td>5.0</td>
+<td>6.4417</td>
+<td>58.6287</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">12</th>
+<td>p70a_7_4</td>
+<td>634</td>
+<td>6.1845</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>31.7864</td>
+<td>513.9660</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>8.7212</td>
+<td>87.1714</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">13</th>
+<td>p70a_10_1</td>
+<td>496</td>
+<td>1.3690</td>
+<td>1.0</td>
+<td>1.0</td>
+<td>2.4739</td>
+<td>180.7147</td>
+<td>1.0</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>13.5582</td>
+<td>196.5327</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">14</th>
+<td>p70a_10_2</td>
+<td>496</td>
+<td>1.2137</td>
+<td>1.0</td>
+<td>1.0</td>
+<td>2.1599</td>
+<td>177.9620</td>
+<td>1.0</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>13.8784</td>
+<td>203.0445</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">15</th>
+<td>p70a_10_3</td>
+<td>496</td>
+<td>0.1552</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.5413</td>
+<td>348.6918</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>8.2052</td>
+<td>100.5473</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">16</th>
+<td>p70a_13_1</td>
+<td>329</td>
+<td>27.2340</td>
+<td>9.0</td>
+<td>4.0</td>
+<td>61.4771</td>
+<td>225.7361</td>
+<td>4.0</td>
+<td>20.0</td>
+<td>16.0</td>
+<td>4.8723</td>
+<td>27.7534</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">17</th>
+<td>total_intervenciones</td>
+<td>1891</td>
+<td>658.9307</td>
+<td>8.0</td>
+<td>0.0</td>
+<td>4544.0305</td>
+<td>689.6067</td>
+<td>0.0</td>
+<td>55.0</td>
+<td>55.0</td>
+<td>12.5821</td>
+<td>183.7675</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="variables-binarias-sino" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="variables-binarias-sino"><span class="header-section-number">7</span> 7. Variables binarias (Si/No)</h2>
+<div id="binarias" class="cell" data-execution_count="9">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>binarias <span class="op">=</span> [</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"serenazgo_2024"</span>, <span class="st">"serenazgo_2025"</span>, <span class="st">"tiene_auto_camioneta"</span>,</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"tiene_radio"</span>, <span class="st">"tiene_camaras"</span>, <span class="st">"tiene_central_videovigilancia"</span>,</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"tiene_chaleco_antibalas"</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="st">'Variable'</span><span class="sc">:&lt;35}</span><span class="ss"> </span><span class="sc">{</span><span class="st">'Si'</span><span class="sc">:&gt;6}</span><span class="ss"> </span><span class="sc">{</span><span class="st">'No'</span><span class="sc">:&gt;6}</span><span class="ss"> </span><span class="sc">{</span><span class="st">'%Si'</span><span class="sc">:&gt;7}</span><span class="ss">"</span>)</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"-"</span> <span class="op">*</span> <span class="dv">55</span>)</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> binarias:</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    conteo <span class="op">=</span> df[col].value_counts()</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>    si <span class="op">=</span> conteo.get(<span class="st">"Si"</span>, <span class="dv">0</span>)</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>    no <span class="op">=</span> conteo.get(<span class="st">"No"</span>, <span class="dv">0</span>)</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>    total <span class="op">=</span> si <span class="op">+</span> no</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>    pct <span class="op">=</span> <span class="bu">round</span>(si <span class="op">/</span> total <span class="op">*</span> <span class="dv">100</span>, <span class="dv">1</span>) <span class="cf">if</span> total <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>col<span class="sc">:&lt;35}</span><span class="ss"> </span><span class="sc">{</span>si<span class="sc">:&gt;6}</span><span class="ss"> </span><span class="sc">{</span>no<span class="sc">:&gt;6}</span><span class="ss"> </span><span class="sc">{</span>pct<span class="sc">:&gt;6}</span><span class="ss">%"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Variable                                Si     No     %Si
+-------------------------------------------------------
+serenazgo_2024                           0    611    0.0%
+serenazgo_2025                           0    626    0.0%
+tiene_auto_camioneta                     0    913    0.0%
+tiene_radio                              0   1360    0.0%
+tiene_camaras                            0   1257    0.0%
+tiene_central_videovigilancia            0   1395    0.0%
+tiene_chaleco_antibalas                  0   1562    0.0%</code></pre>
+</div>
+</div>
+</section>
+<section id="mapa-de-concentracion-gini" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="mapa-de-concentracion-gini"><span class="header-section-number">8</span> 8. Mapa de concentracion: Gini</h2>
+<div id="gini" class="cell" data-execution_count="10">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> gini(x):</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> np.array(x, dtype<span class="op">=</span><span class="bu">float</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> x[<span class="op">~</span>np.isnan(x)]</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(x) <span class="op">==</span> <span class="dv">0</span> <span class="kw">or</span> x.<span class="bu">sum</span>() <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> np.nan</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>    x_sorted <span class="op">=</span> np.sort(x)</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> <span class="bu">len</span>(x)</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>    index <span class="op">=</span> np.arange(<span class="dv">1</span>, n <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (<span class="dv">2</span> <span class="op">*</span> np.<span class="bu">sum</span>(index <span class="op">*</span> x_sorted) <span class="op">/</span> (n <span class="op">*</span> np.<span class="bu">sum</span>(x_sorted))) <span class="op">-</span> (n <span class="op">+</span> <span class="dv">1</span>) <span class="op">/</span> n</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span><span class="st">'Variable'</span><span class="sc">:&lt;30}</span><span class="ss"> </span><span class="sc">{</span><span class="st">'Gini'</span><span class="sc">:&gt;8}</span><span class="ss">"</span>)</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"-"</span> <span class="op">*</span> <span class="dv">40</span>)</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> cuantitativas:</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>    g <span class="op">=</span> gini(df[col].values)</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>    g_str <span class="op">=</span> <span class="ss">f"</span><span class="sc">{</span>g<span class="sc">:.4f}</span><span class="ss">"</span> <span class="cf">if</span> <span class="kw">not</span> np.isnan(g) <span class="cf">else</span> <span class="st">"NA"</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>col<span class="sc">:&lt;30}</span><span class="ss"> </span><span class="sc">{</span>g_str<span class="sc">:&gt;8}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Variable                           Gini
+----------------------------------------
+p69_2_t                          0.7901
+p69_2_m                          0.8676
+p69_2_h                          0.7792
+p70a_1_1                         0.6252
+p70a_1_2                         0.6227
+p70a_1_3                         0.8510
+p70a_6_1                         0.7290
+p70a_6_2                         0.7548
+p70a_6_3                         0.8553
+p70a_7_1                         0.7022
+p70a_7_2                         0.7236
+p70a_7_3                         0.8240
+p70a_7_4                         0.9469
+p70a_10_1                        0.2515
+p70a_10_2                        0.2021
+p70a_10_3                        0.8919
+p70a_13_1                        0.7099
+total_intervenciones             0.9551</code></pre>
+</div>
+</div>
+</section>
+<section id="valores-faltantes" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="valores-faltantes"><span class="header-section-number">9</span> 9. Valores faltantes</h2>
+<div id="faltantes" class="cell" data-execution_count="11">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>faltantes <span class="op">=</span> df.isna().<span class="bu">sum</span>()</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>faltantes_pct <span class="op">=</span> (faltantes <span class="op">/</span> <span class="bu">len</span>(df) <span class="op">*</span> <span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>df_faltantes <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Variable"</span>: faltantes.index,</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Nulos"</span>: faltantes.values,</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Pct"</span>: faltantes_pct.values</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>}).query(<span class="st">"Nulos &gt; 0"</span>).sort_values(<span class="st">"Nulos"</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="bu">len</span>(df_faltantes) <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Variables con valores faltantes:"</span>)</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(df_faltantes.to_string(index<span class="op">=</span><span class="va">False</span>))</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"No hay valores faltantes."</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Variables con valores faltantes:
+             Variable  Nulos  Pct
+            p70a_13_1   1562 82.6
+            p70a_10_2   1395 73.8
+            p70a_10_3   1395 73.8
+            p70a_10_1   1395 73.8
+             p70a_6_1   1360 71.9
+             p70a_6_2   1360 71.9
+             p70a_6_3   1360 71.9
+             p70a_7_1   1257 66.5
+             p70a_7_2   1257 66.5
+             p70a_7_3   1257 66.5
+             p70a_7_4   1257 66.5
+             p70a_1_1    913 48.3
+             p70a_1_2    913 48.3
+             p70a_1_3    913 48.3
+frecuencia_patrullaje    695 36.8
+              p69_2_m    626 33.1
+              p69_2_h    626 33.1
+              p69_2_t    626 33.1</code></pre>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
